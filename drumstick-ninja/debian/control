@@ -1,0 +1,35 @@
+Source: drumstick
+Priority: optional
+Maintainer: Washington Indacochea Delgado <wachin.id@gmail.com>
+Build-Depends: debhelper-compat (= 13), autotools-dev
+Standards-Version: 4.5.1
+Section: libs
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/drumstick
+#Vcs-Git: https://salsa.debian.org/debian/drumstick.git
+Rules-Requires-Root: no
+
+Package: drumstick-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: drumstick1 (= ${binary:Version}), ${misc:Depends}
+Description: Qt5/C++ wrapper for ALSA Sequencer - development files
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for SMF and WRK
+ file processing are also included.
+ .
+ This package provides the development files.
+
+Package: drumstick1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Qt5/C++ wrapper for ALSA Sequencer (shared library)
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for OVE and WRK
+ file processing are also included.
+ .
+ This package provides the shared library.

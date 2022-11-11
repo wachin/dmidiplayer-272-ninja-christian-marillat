@@ -1,0 +1,5 @@
+drumstick (2.7.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Washington Indacochea Delgado <wachin.id@gmail.com>  Thu, 10 Nov 2022 12:43:22 -0500
