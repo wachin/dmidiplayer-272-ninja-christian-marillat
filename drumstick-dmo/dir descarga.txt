@@ -1,0 +1,9 @@
+
+
+https://www.deb-multimedia.org/pool/main/d/
+https://www.deb-multimedia.org/pool/main/d/drumstick-dmo/
+https://www.deb-multimedia.org/pool/main/d/drumstick-dmo/drumstick-dmo_2.7.2-dmo1.debian.tar.xz
+
+https://www.deb-multimedia.org/pool/main/d/drumstick-dmo/drumstick-dmo_2.7.2.orig.tar.bz2
+
+https://www.deb-multimedia.org/pool/main/d/drumstick-dmo/drumstick-dmo_2.7.2-dmo1.dsc

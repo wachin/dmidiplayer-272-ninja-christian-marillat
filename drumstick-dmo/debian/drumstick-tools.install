@@ -8,7 +8,3 @@ usr/share/icons
 usr/share/man/man1
 usr/share/metainfo
 usr/share/mime/packages/drumstick.xml
-usr/lib/*/lib*.so.*
-usr/lib/*/drumstick2
-usr/share/drumstick/drumstick-widgets_*.qm
-usr/lib/*/libdrumstick-widgets.so.2*

@@ -1,0 +1,24 @@
+Source: dmidiplayer-dmo
+Section: sound
+Priority: optional
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Homepage: https://sourceforge.net/projects/dmidiplayer/
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Build-Depends: debhelper-compat (= 13), cmake, ninja-build, qtbase5-dev,
+ libuchardet-dev, libdrumstick-dev (>= 1:2.6.0), qttools5-dev, pkg-config,
+ pandoc
+
+Package: dmidiplayer
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Featured MIDI File Player.
+ Features:
+ .
+  * MIDI Output to hardware MIDI ports, or any other Drumstick backend.
+  * Transpose song tonality between -12 and +12 semitones
+  * Change MIDI volume level (using MIDI CC7)
+  * Scale song speed between half and double tempo
+  * Plays Standard MIDI Files (.MID, .KAR) and Cakewalk project files (.WRK)
+  * Views: Rhythm, MIDI Channels, Piano Player, Lyrics (Karaoke)

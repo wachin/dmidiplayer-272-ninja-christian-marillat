@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ -Scmake+ninja
+
+override_dh_clean:
+	find docs -name index.html -delete
+
+	dh_clean
+
+override_dh_auto_test:

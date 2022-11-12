@@ -1,0 +1,5 @@
+usr/include
+usr/lib/*/*.a
+usr/lib/*/cmake/sonivox
+usr/lib/*/lib*.so
+usr/lib/*/pkgconfig

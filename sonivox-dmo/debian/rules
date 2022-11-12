@@ -1,0 +1,7 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ -Scmake+ninja
+
+override_dh_installdocs:
+	dh_installdocs -A NOTICE

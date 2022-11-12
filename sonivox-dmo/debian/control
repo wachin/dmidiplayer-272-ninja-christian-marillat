@@ -1,0 +1,32 @@
+Source: sonivox-dmo
+Section: libs
+Priority: optional
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Rules-Requires-Root: no
+Homepage: https://github.com/pedrolcl/sonivox
+Standards-Version: 4.6.1
+Build-Depends: debhelper-compat (= 13), cmake, ninja-build, libgtest-dev
+
+Package: libsonivox3
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Wave Table synthesizer, using embedded samples - runtime files
+ This is a Wave Table synthesizer, not using external soundfont files but
+ embedded samples instead. It is also a real time GM synthesizer. It
+ consumes very little resources, so it may be indicated in projects for small
+ embedded devices. There is neither MIDI input nor Audio output facilities
+ included in the library. You need to provide your own input/output.
+
+Package: libsonivox-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libsonivox3 (= ${binary:Version}), ${misc:Depends}
+Description: Wave Table synthesizer, using embedded samples - devel files
+ This is a Wave Table synthesizer, not using external soundfont files but
+ embedded samples instead. It is also a real time GM synthesizer. It
+ consumes very little resources, so it may be indicated in projects for small
+ embedded devices. There is neither MIDI input nor Audio output facilities
+ included in the library. You need to provide your own input/output.

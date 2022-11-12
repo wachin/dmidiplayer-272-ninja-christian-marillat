@@ -1,0 +1,11 @@
+sonivox-dmo (3.6.11-dmo1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Tue, 16 Aug 2022 16:44:13 +0200
+
+sonivox-dmo (3.6.10.14-dmo1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Christian Marillat <marillat@deb-multimedia.org>  Fri, 29 Jul 2022 07:59:06 +0200

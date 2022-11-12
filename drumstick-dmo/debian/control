@@ -1,0 +1,121 @@
+Source: drumstick-dmo
+Section: libs
+Priority: optional
+Maintainer: Christian Marillat <marillat@deb-multimedia.org>
+Bugs: mailto:marillat@deb-multimedia.org
+Homepage: http://drumstick.sourceforge.net/
+Standards-Version: 4.6.1
+Build-Depends: debhelper-compat (= 13), cmake, libasound2-dev, libqt5svg5-dev,
+ xsltproc, qtbase5-dev, libx11-dev, pkg-config, libfluidsynth-dev, libpulse-dev,
+ shared-mime-info, ninja-build, qttools5-dev, graphviz, doxygen, docbook-xsl,
+ libsonivox-dev
+
+Package: libdrumstick-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libdrumstick-alsa2 (= ${binary:Version}), libdrumstick-file2 (= ${binary:Version}),
+ libdrumstick-rt2 (= ${binary:Version}), libdrumstick-widgets2 (= ${binary:Version}),
+ libdrumstick-rt-backends (= ${binary:Version}), ${misc:Depends} 
+Replaces: libdrumstick1
+Conflicts: libdrumstick1
+Description: Qt5/C++ wrapper for ALSA Sequencer - development files
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for SMF and WRK
+ file processing are also included.
+ .
+ This package provides the development files.
+
+Package: libdrumstick-alsa2
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Replaces: libdrumstick1
+Conflicts: libdrumstick1
+Description: Qt5/C++ wrapper for ALSA Sequencer (shared library)
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for OVE and WRK
+ file processing are also included.
+ .
+ This package provides the shared library.
+
+Package: libdrumstick-file2
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Replaces: libdrumstick1
+Conflicts: libdrumstick1
+Description: File format support library for drumstick (shared library)
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for OVE and WRK
+ file processing are also included.
+ .
+ This package contains the shared library for support of MIDI, Cakewalk and
+ Overture file formats.
+
+Package: libdrumstick-rt2
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Recommends: libdrumstick-rt-backends (= ${binary:Version}), rtkit
+Replaces: libdrumstick1
+Conflicts: libdrumstick1
+Description: Realtime MIDI I/O with pluggable backends (shared library)
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for OVE and WRK
+ file processing are also included.
+ .
+ This package contains the shared library for realtime MIDI I/O with plugin
+ support.
+
+Package: libdrumstick-widgets2
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Realtime MIDI I/O with pluggable backends (shared library)
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for OVE and WRK
+ file processing are also included.
+ .
+ This package contains the shared library for libdrumstick widgets.
+
+Package: libdrumstick-rt-backends
+Architecture: any
+Multi-Arch: same
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Replaces: libdrumstick1
+Conflicts: libdrumstick1
+Description: Realtime MIDI I/O backends
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for OVE and WRK
+ file processing are also included.
+ .
+ This package contains the bakcends for realtime MIDI I/O.
+
+Package: drumstick-tools
+Section: sound
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Qt5/C++ wrapper for ALSA Sequencer - utilities
+ This library is a C++ wrapper around the ALSA library sequencer interface,
+ using Qt5 objects, idioms and style. ALSA sequencer provides software
+ support for MIDI technology on Linux. Complementary classes for SMF and WRK
+ file processing are also included.
+ .
+ This package provides utilities shipped with the library:
+  - drumstick-drumgrid: Simple Qt drum sequencer.
+  - drumstick-dumpmid: Write ALSA MIDI events to STDOUT.
+  - drumstick-dumpsmf: Write MIDI events from a MIDI file to STDOUT.
+  - drumstick-dumpwrk: Write MIDI events from a Cakewalk WRK file to STDOUT.
+  - drumstick-guiplayer: Simple Qt MIDI file player.
+  - drumstick-metronome: Headless MIDI metronome.
+  - drumstick-playsmf: Headless MIDI file player.
+  - drumstick-sysinfo: Display information about ALSA MIDI.
+  - drumstick-vpiano: Virtual Piano Keyboard GUI application.
+  - drumstick-dumprmi: Support for the .RMI file format.
