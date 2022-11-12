@@ -1,0 +1,7 @@
+
+
+https://www.deb-multimedia.org/pool/main/s/sonivox-dmo/sonivox-dmo_3.6.11-dmo1.debian.tar.xz
+
+https://www.deb-multimedia.org/pool/main/s/sonivox-dmo/sonivox-dmo_3.6.11.orig.tar.gz
+
+https://www.deb-multimedia.org/pool/main/s/sonivox-dmo/sonivox-dmo_3.6.11-dmo1.dsc 
